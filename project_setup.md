@@ -1,0 +1,64 @@
+# Project setup
+
+Most of our projects are developed in **Python**.  
+We recommend using **Python 3.11**, as it provides the best compatibility with the packages we commonly use.  
+This version is not mandatory - other versions may be used if required by the project.
+
+## Virtual Environment
+
+To prevent package conflicts, **always create a separate virtual environment** for each project.  
+We use **`pip`** for dependency management, as it is simpler and better suited for our workflow than `conda`.
+
+Every project **must include** a `requirements.txt` file listing all required packages.  
+The Python version used in the project should also be specified - either in the project’s `README.md` or in a `.python-version` file (read more about `.python-version` file [here](https://pydevtools.com/handbook/explanation/what-is-a-python-version-file/)).
+
+## First-Time setup instructions
+
+Each project’s `README.md` should include a **“First Time Setup”** section.  
+This helps new contributors quickly set up their environment and ensures a consistent installation process.
+
+### Example:
+
+```md
+## First time setup
+
+Use python3.11.
+
+To setup project, run following commands:
+
+python3.11 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## .gitignore
+
+It’s essential to **exclude the virtual environment** from git.
+
+You can do this in one of two ways:
+
+1. Add the virtual environment folder (e.g., `venv/`) to your project’s `.gitignore` file.
+2. Or, create a `.gitignore` file inside the virtual environment folder with the following content:
+    `*`
+
+### Example structure:
+``` (folders structure)
+venv/
+	.gitignore (with content: "*")
+	... (other venv files)
+```
+
+Additionally, some IDEs create their own configuration folders.
+These should also be ignored. For example, PyCharm creates a `.idea/` folder that is **not** ignored by default - be sure to add it to `.gitignore`!
+
+## Summary
+
+Each Python project repository should include the following files at the root:
+
+```
+.gitignore
+requirements.txt
+README.md (with python version specified)
+
+.python-version (optional)
+```

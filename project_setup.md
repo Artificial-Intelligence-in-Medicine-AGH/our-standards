@@ -51,6 +51,24 @@ venv/
 Additionally, some IDEs create their own configuration folders.
 These should also be ignored. For example, PyCharm creates a `.idea/` folder that is **not** ignored by default - be sure to add it to `.gitignore`!
 
+If the project contains `.env` file it also MUST be excluded from version control!
+
+### Example .gitignore file
+
+Example (can be used as a base when creating new repositories):
+
+```.gitignore
+# Python virtual environment
+venv/
+.venv/
+
+# PyCharm
+.idea/
+
+# Project settings
+.env
+```
+
 ## Summary
 
 Each Python project repository should include the following files at the root:

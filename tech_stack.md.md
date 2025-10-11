@@ -18,6 +18,7 @@ For managing virtual environments. Typically causes fewer issues less problems t
 **PyTorch** - For GPU-based tensor operations.
 **Pandas** - For data importing and manipulations.
 **matplotlib** - for plotting
+**scikit-learn** - For Machine Learning and accuracy measurement
 
 **pydantic** - for validating JSONs, data structures (provides solid validation framework) - very useful for bigger projects
 

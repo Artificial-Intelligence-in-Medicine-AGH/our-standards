@@ -19,6 +19,7 @@ In short — if it’s on GitHub, it should be in English.
 
 For detailed information on each area of our standards, see the following files:
 
-- [[project_setup.md]]
-- [[tech_stack.md]]
-- [[documentation.md]]
+- [project_setup.md](project_setup.md)
+- [tech_stack.md](tech_stack.md)
+- [documentation.md](documentation.md)
+- [git_and_github.md](git_and_github.md)

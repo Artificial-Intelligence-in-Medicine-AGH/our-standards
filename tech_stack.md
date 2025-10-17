@@ -8,9 +8,9 @@ All modern AI-related projects are implemented in Python. It's powerful and easy
 
 We usually use python version 3.11, as it provides the best compatibility with the packages we commonly use. This version is not mandatory - other versions may be used if required by the project.
 
-## **pip**
+## **Python Packaging**
 
-For managing virtual environments. Typically causes fewer issues less problems than `conda`.
+We primarily use `pip` for managing Python packages and virtual environments, as it tends to cause fewer compatibility issues. `Conda` is used exclusively for computations on HPC systems, where its optimized environments and performance benefits are particularly valuable.
 
 ## Python packages
 

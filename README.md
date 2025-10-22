@@ -23,3 +23,4 @@ For detailed information on each area of our standards, see the following files:
 - [tech_stack.md](tech_stack.md)
 - [documentation.md](documentation.md)
 - [git_and_github.md](git_and_github.md)
+- [licence.md](licence.md)
